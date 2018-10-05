@@ -1,0 +1,6 @@
+#/bin/bash
+for slide in $(ls | grep \.md); do
+  clear
+  ./mdvl.py $slide
+  read -n 1 -p '';
+done
